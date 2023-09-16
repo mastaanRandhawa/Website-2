@@ -1,0 +1,153 @@
+/* Global view */
+
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.container {
+    padding-top: 140px;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-container {
+    background-color: rgb(88, 146, 127);      min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+.header-container header {
+    max-width: 1024px;
+    background-color: rgb(88, 146, 127);   
+    min-height: 100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    
+    color: whitesmoke;
+}
+
+nav a{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 15px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(115, 198, 171);
+
+}
+
+.col p {
+    color: whitesmoke;
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem ;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.mob-wrapper {
+    display: none; 
+}
+
+.mob-nav a {
+    display: block;
+    padding: 10px 30px;
+    /* border-style: solid;
+    border-width: 1px; */
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: -85px;
+    background-color: rgb(100, 184, 156);text-align: center;
+}
+
+/* Tablet view*/
+@media (max-width: 768px){
+    .mob-wrapper {
+        display:block;
+        padding-right: 30px;
+    }
+
+    .col {
+        width: 45%;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    nav a {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .logo {
+        padding: 40px 0px;
+
+    }
+
+    .header-container {
+        position: relative;
+    }
+    
+    .container {
+        padding-top: 40px;
+    }
+    
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+}
+
+
+/* Mobile view */
+@media (max-width: 400px){
+
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+}
+
